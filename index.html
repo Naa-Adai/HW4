@@ -1,0 +1,74 @@
+<!--
+File: index.html
+GUI Assignment: multiplication table
+Mildred Kumah, UMass Lowell Computer Science, mildred_kumah@student.uml.edu
+Copyright (c) 2021 by Mildred All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MULTIPLICATION TABLE</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="multiply">
+            <h2 id="h2">ENTER 4 NUMBERS!!!</h2>
+                <div>
+                    <input type="text" id="firstNum" name="firstNum" required ="">
+                    <span class="error" id ="firstNum_error"></span>
+                    <label>Starting Vertical Number</label>
+                </div>
+                <div class="slidecontainer">
+                <input type="range" min="-50" max="50" value="0" class="slider" id="myRange">
+                </div>
+                
+       
+                <div>
+                    <input type="text" id="secondNum" name="secondNum" required ="">
+                    <span class="error" id ="secondNum_error"></span>
+                    <label>Ending Vertical Number</label>
+                </div>
+                <div class="slidecontainer">
+                <input type="range" min="-50" max="50" value="0" class="slider" id="myRange">
+                </div>
+                
+                <div>
+                    <input type="text" id="thirdNum" name="thirdNum" required ="">
+                    <span class="error" id ="thirdNum_error"></span>
+                    <label>Starting Horizontal Number</label>
+                </div>
+                <div class="slidecontainer">
+                <input type="range" min="-50" max="50" value="0" class="slider" id="myRange">
+                </div>
+                
+                <div>
+                    <input type="text" id="forthNum" name="forthNum" required ="">
+                    <span class="error" id ="forthNum_error"></span>
+                    <label>Ending Horizontal Number</label>
+                </div>
+                <div class="slidecontainer">
+                <input type="range" min="-50" max="50" value="0" class="slider" id="myRange">
+                </div>
+                
+                <input type="submit" value="ENTER" name="">
+            </form>
+            <div>
+            <form>
+            <div class="scroll">
+            <table id="output" align="center">
+            </table> 
+            </div>
+            </form>
+        </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/multiply.js"></script>
+    </body>
+</html>
